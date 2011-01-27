@@ -1,0 +1,7 @@
+CMakeFiles
+/SystemTest/SystemTest
+CMakeCache.txt
+cmake_install.cmake
+/SystemTest/moc_*.cxx
+*~
+Makefile
