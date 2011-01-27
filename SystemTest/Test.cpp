@@ -33,7 +33,7 @@ bool Test::load(QString path)
 
 unsigned int Test::execute(TestConfig &config)
 {
-	std::cerr << "-- Test \"" << name.toStdString() << "\" --------" << std::endl;
+	std::cerr << "\033[34m-- Test \"" << name.toStdString() << "\" --------\033[m" << std::endl;
 	unsigned int errorcount = 0;
 	// Start the process
 	QProcess process;
@@ -50,7 +50,7 @@ unsigned int Test::execute(TestConfig &config)
 			QByteArray input = (rule.mid(1) + "\n").toUtf8();
 			if (process.write(input) != input.size())
 			{
-				std::cerr << "Error: Unexpected EOF (" << i << ")" << std::endl;
+				std::cerr << "\033[31mError: Unexpected EOF (" << i << ")\033[m" << std::endl;
 				errorcount++;
 				break;
 			}
@@ -61,7 +61,7 @@ unsigned int Test::execute(TestConfig &config)
 			{
 				if (!process.waitForReadyRead(3000))
 				{
-					std::cerr << "Error: Timeout (" << i << ")" << std::endl;
+					std::cerr << "\033[31mError: Timeout (" << i << ")\033[m" << std::endl;
 					errorcount++;
 					break;
 				}
@@ -73,17 +73,17 @@ unsigned int Test::execute(TestConfig &config)
 			QRegExp regex(rule.mid(1));
 			if (regex.exactMatch(line))
 			{
-				std::cerr << "PASS (" << i << ")" << std::endl;
+				std::cerr << "\t\033[33mPASS (" << i << ")\n\033[m" << std::endl;
 			}
 			else
 			{
-				std::cerr << "FAIL (" << i << ")" << std::endl;
+				std::cerr << "\t\033[1m\033[31mFAIL (" << i << ")\033[m\n" << std::endl;
 				errorcount++;
 			}
 		}
 		else
 		{
-			std::cerr << "Error: Invalid test rule (" << i << ")." << std::endl;
+			std::cerr << "\033[31mError: Invalid test rule (" << i << ").\033[m" << std::endl;
 			errorcount++;
 		}
 	}
@@ -91,9 +91,9 @@ unsigned int Test::execute(TestConfig &config)
 	char dummy;
 	if (process.read(&dummy, 1) == 1)
 	{
-		std::cerr << "Error: EOF expected at the end of the test." << std::endl;
+		std::cerr << "\033[31mError: EOF expected at the end of the test.\033[m" << std::endl;
 	}
 	process.kill();
-	std::cerr << "-- " << errorcount << " errors. ----------" << std::endl;
+	std::cerr << "\033[1m\033[36m-- " << errorcount << " errors. ----------\033[m" << std::endl;
 	return errorcount;
 }
