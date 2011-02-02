@@ -1,0 +1,43 @@
+>ADD DEVICE SamsungSyncMaster
+>ADD DeVICE BeamerT42
+<(> )+Error!.*
+>ADD DECIVE EpsonEX41
+<(> )+Error!.*
+>LIST DEVICES
+<(> )+SamsungSyncMaster
+>ADD DEVICE EpsonEX41
+>ADD DEVICE ~ViewSonicPJD5122
+<(> )+Error!.*
+>LIST DEVICES
+<(> )+EpsonEX41
+<SamsungSyncMaster
+>ADD device OptomaPT100
+<(> )+Error!.*
+>ADD DEVICE OptomaPT100
+>ADD DEVICE Samsung Sync Master
+<(> )+Error!.*
+>ADD DEVICE EpsonEX-41
+<(> )+Error!.*
+>ADD DEVICE ]ViewSonicPJD5122[
+<(> )+Error!.*
+>LIST DEVICES
+<(> )+EpsonEX41
+<OptomaPT100
+<SamsungSyncMaster
+>ADD DEVICE Optoma PT100
+<(> )+Error!.*
+>ADD DEVICE EpsonEX41 "
+<(> )+Error!.*
+>ADD DEVICE ViewSonicPJD5122
+>ADD DEVICE EpsonEX41
+<(> )+Error!.*
+>ADD DEVICE epsonEX41
+>LIST DEVICES
+<(> )+EpsonEX41
+<OptomaPT100
+<SamsungSyncMaster
+<ViewSonicPJD5122
+<epsonEX41
+>ADD DEVICE OptomaPT100
+<(> )+Error!.*
+>QUIT

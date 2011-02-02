@@ -1,0 +1,100 @@
+>ADD BUILDING 50.34
+>ADD BUILDING 50.35
+>ADD BUILDING 100.13
+>ADD BUILDING 13.20
+>ADD BUILDING -10.3
+<(> )+Error!.*
+>ADD
+<(> )+Error!.*
+>ADD ROOM
+<(> )+Error!.*
+>ADD room 50.34 123
+<(> )+Error!.*
+>LIST ROOMS
+>ADD ROOMS 50.34 123
+<(> )+Error!.*
+>ADD ROOM 50.35 006
+>ADD ROOM 23.12
+<(> )+Error!.*
+>ADD ROOM 23.13 126
+<(> )+Error!.*
+>LIST ROOMS
+<(> )+50.35 006
+>ADD ROOM 50.34 -142
+>ADD ROOM N25 126
+<(> )+Error!.*
+>ADD ROOM 50.34 006
+>ADD ROOM 13.20
+<(> )+Error!.*
+>LIST ROOMS
+<(> )+50.34 -142
+<50.34 006
+<50.35 006
+>ADD ROOM 50.32 814
+<(> )+Error!.*
+>ADD ROOM -10.3 287
+<(> )+Error!.*
+>ADD ROOM 13.20 846
+>ADD ROOM 50.34 aha
+<(> )+Error!.*
+>ADD ROOM 50.35 T56
+<(> )+Error!.*
+>LIST ROOMS
+<(> )+13.20 846
+<50.34 -142
+<50.34 006
+<50.35 006
+>ADD ROOM 100.13 +34
+<(> )+Error!.*
+>ADD ROOM 13.20 -859
+>ADD ROOM 100.13 #897
+<(> )+Error!.*
+>LIST ROOMS
+<(> )+13.20 -859
+<13.20 846
+<50.34 -142
+<50.34 006
+<50.35 006
+>ADD ROOM 13.20 +641
+<(> )+Error!.*
+>ADD ROOM 100.13 7531
+<(> )+Error!.*
+>ADD ROOM 50.35 571
+>ADD ROOM 50.34 033
+>LIST ROOMS
+<(> )+13.20 -859
+<13.20 846
+<50.34 -142
+<50.34 006
+<50.34 033
+<50.35 006
+<50.35 571
+>ADD ROOM 50.34 -007
+<(> )+Error!.*
+>LIST ROOMS
+<(> )+13.20 -859
+<13.20 846
+<50.34 -142
+<50.34 006
+<50.34 033
+<50.35 006
+<50.35 571
+>ADD ROOM 50.34 bar
+<(> )+Error!.*
+>ADD ROOM 50.35 174 []
+<(> )+Error!.*
+>ADD ROOM 13.20 050
+>ADD ROOM 50.35 571
+<(> )+Error!.*
+>LIST ROOMS
+<(> )+13.20 -859
+<13.20 050
+<13.20 846
+<50.34 -142
+<50.34 006
+<50.34 033
+<50.35 006
+<50.35 571
+>ADD ROOM 100.13 +34
+<(> )+Error!.*
+>QUIT

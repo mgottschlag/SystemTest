@@ -1,0 +1,126 @@
+>ADD PERSON Marc
+>ADD PERSON hulk
+<(> )+Error!.*
+>ADD DEVICE OptomaPT100
+>Add DEVICE SamsungES65
+<(> )+Error!.*
+>ADD PERSON OLaF
+<(> )+Error!.*
+>ADD PERSON Nick
+>ADD PERSON
+<(> )+Error!.*
+>ADD
+<(> )+Error!.*
+>ADD PERSON Peter Lustig
+<(> )+Error!.*
+>ADD Person Peter
+<(> )+Error!.*
+>ADD PERSON Marc
+<(> )+Error!.*
+>ADD PERSON Britta
+>LIST PERSONS
+<(> )+Britta
+<Marc
+<Nick
+>LIST persons
+<(> )+Error!.*
+>LIST DEVICES
+<(> )+OptomaPT100
+>ADD ROOM 50.34 013
+<(> )+Error!.*
+>ADD BUILDING ax.13
+<(> )+Error!.*
+>ADD BUILDING 50.34
+>ADD BUILDING 50.35 013
+<(> )+Error!.*
+>ADD DEVICE Epson EX31
+<(> )+Error!.*
+>ADD BUILDING 50.35
+>ADD BUILDING 23.10
+>ADD ROOM 50.34 256
+>ADD BUILDINGS 10.10
+<(> )+Error!.*
+>ADD DEVICE ViewSonicPJD5122
+>ADD BUILDING 50.35
+<(> )+Error!.*
+>LIST BUILDINGS
+<(> )+23\.10
+<50\.34
+<50\.35
+>ADD ORGANISATION ZVI
+>ADD ROOM 50.34 N25
+<(> )+Error!.*
+>ADD ORGANISATION ZVI
+<(> )+Error!.*
+>ADD ORGANISATION ZVI IPD
+<(> )+Error!.*
+>ADD ORGANISATIONS FakultaetMathematik
+<(> )+Error!.*
+>ADD ORGANISATION 1PD
+<(> )+Error!.*
+>ADD ORGANISATION FakultaetInformatik
+>LIST ORGANISATIONS
+<(> )+FakultaetInformatik
+<ZVI
+>ADD DEVICE SamsungES65!
+<(> )+Error!.*
+>ADD ROOM 10.11 007
+<(> )+Error!.*
+>ADD ROOM 50.34 013
+>ADD ROOM 50.34 -127
+>ADD ROOM 50.35 -001
+<(> )+Error!.*
+>ADD ROOM 50.35 212
+>ADD ROOM 23.10 -12
+<(> )+Error!.*
+>ADD ROOM 50.34 aha
+<(> )+Error!.*
+>ADD ROOM 50.34 013
+<(> )+Error!.*
+>LIST ROOMs
+<(> )+Error!.*
+>LIST ROOMS
+<(> )+50\.34 -127
+<50\.34 013
+<50\.34 256
+<50\.35 212
+>BOOK 01.12.2011-04:00 03.12.2011-18:00 PERSON Nick ROOM 50.35 013
+<(> )+Error!.*
+>BOOK 27.12.2011-04:40 28.12.2011-17:35 PERSON Nick ROOM 50.34 212
+<(> )+Error!.*
+>BOOKINGS PERSON Britta
+>BOOK 01.12.2011-04:00 03.12.2011-18:00 PERSON Nick ROOM 50.34 256
+>BOOK 04.01.2011-04:00 03.01.2011-18:00 PERSON Britta ROOM 50.35 212
+<(> )+Error!.*
+>BOOK 05.02.2009-17:00 05.02.2009-19:00 ORGANISATION IPD DEVICE OptomaPT100
+<(> )+Error!.*
+>BOOKINGS PERSON Kurt
+<(> )+Error!.*
+>BOOK 26.06.2010-17:00 26.06.2010-19:00 ORGANISATION ZVI DEVICE OptomaPT100
+>BOOK 26.06.2010-15:00 26.06.2010-18:00 PERSON Britta DEVICE OptomaPT100
+<(> )+Error!.*
+>BOOK 15.10.2011-12:00 16.10.2011-18:31 PERSON Marc DEVICE Epson EX31
+<(> )+Error!.*
+>BOOKINGS ORGANISATION Nick
+<(> )+Error!.*
+>BOOK 13.07.2012-12:18 13.07.2012-11:29 ORGANISATION FakultaetInformatik ROOM 50.34 -127
+<(> )+Error!.*
+>BOOK 09.07.2011-13:30 09.07.2011-14:15 ORGANISATION IPD ROOM 50.34 013
+<(> )+Error!.*
+>BOOK 26.06.2010-20:00 26.06.2010-21:30 PERSON Marc DEVICE OptomaPT100
+>BOOKINGS PERSON Nick
+<(> )+\[01\.12\.2011-04:00,03\.12\.2011-18:00\] 50.34 256
+>BOOK 27.12.2011-04:40 28.12.2011-17:35 PERSON britta ROOM 50.34 256
+<(> )+Error!.*
+>BOOK 18.12.2010-16:20 21.12.2010-17:35 person Nick ROOM 50.34 -127
+<(> )+Error!.*
+>BOOKINGS
+<(> )+Error!.*
+>BOOKINGS ROOM 50.34 256
+<(> )+\[01\.12\.2011-04:00,03\.12\.2011-18:00\] Person Nick
+>BOOKINGS ROOM
+<(> )+Error!.*
+>BOOKINGS DEVICE OptomaPT100
+<(> )+\[26\.06\.2010-17:00,26\.06\.2010-19:00\] Organisation ZVI
+<\[26\.06\.2010-20:00,26\.06\.2010-21:30\] Person Marc
+>QUIT

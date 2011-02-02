@@ -1,0 +1,78 @@
+>ADD BUILDINGS 10.12
+<(> )+Error!.*
+>ADD BU1LDING 30.23
+<(> )+Error!.*
+>ADD BUILDING
+<(> )+Error!.*
+>LIST BUILDINGS
+>ADD BUILDING N25
+<(> )+Error!.*
+>ADD BUILDING 34.M3
+<(> )+Error!.*
+>ADD BUILDING 50.34
+>ADD BUILDING 56,23
+<(> )+Error!.*
+>ADD BUILDING -30.20
+<(> )+Error!.*
+>LIST BUILDINGS
+<(> )+50.34
+>ADD BUILDING 03.20
+<(> )+Error!.*
+>ADD BUILDING ul.12
+<(> )+Error!.*
+>ADD BUILDING $2.50
+<(> )+Error!.*
+>ADD BUILDING 13.11
+>ADD BUILDING (2.3)
+<(> )+Error!.*
+>LIST BUILDINGS
+<(> )+13.11
+<50.34
+>ADD BUILDING +23.10
+<(> )+Error!.*
+>ADD BUILDING 2.30
+>LIST BUILDINGS
+<(> )+2.30
+<13.11
+<50.34
+>ADD BUILDING 45.+12
+<(> )+Error!.*
+>ADD BUILDING 50.35
+>ADD BUILDING 56.0H
+<(> )+Error!.*
+>LIST BUILDINGS
+<(> )+2.30
+<13.11
+<50.34
+<50.35
+>ADD BUILDING 78..3
+<(> )+Error!.*
+>ADD BUILDING 50.34 -123
+<(> )+Error!.*
+>ADD BUILDING ~12.0
+<(> )+Error!.*
+>ADD BUILDING 50.34
+<(> )+Error!.*
+>ADD BUILDING 12.00
+<(> )+Error!.*
+>ADD BUILDING 50.34.2
+<(> )+Error!.*
+>ADD BUILDING 18.23
+>ADD BUILDING 100.67
+>ADD BUILDING 2.01
+<(> )+Error!.*
+>LIST BUILDINGS
+<(> )+2.30
+<13.11
+<18.23
+<50.34
+<50.35
+<100.67
+>LIST BUILDINGS
+<(> )+2.30
+<13.11
+<18.23
+<50.34
+<50.35
+<100.67
+>QUIT
