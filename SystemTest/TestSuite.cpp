@@ -47,11 +47,26 @@ bool TestSuite::load(QString path)
 
 unsigned int TestSuite::execute(TestConfig &config)
 {
+	QList<QString> errortests;
+	QList<unsigned int> errors;
 	unsigned int errorcount = 0;
 	for (int i = 0; i < tests.size(); i++)
 	{
-		errorcount += tests[i]->execute(config);
+		unsigned int testerrors = tests[i]->execute(config);
+		errorcount += testerrors;
+		if (testerrors > 0)
+		{
+			errortests.append(tests[i]->getName());
+			errors.append(testerrors);
+		}
 	}
+	// Print summary
+	std::cout << "Summary:" << std::endl;
+	for (int i = 0; i < errors.size(); i++)
+	{
+		std::cout << errortests[i].toStdString() << ": " << errors[i] << " errors." << std::endl;
+	}
+	std::cout << errorcount << " errors occured in all tests." << std::endl;
 	return errorcount;
 }
 
